@@ -1,0 +1,18 @@
+name: 🧪 Widget Testing
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  widget-test:
+    name: 🔥 Run Testing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+      - run: flutter test
