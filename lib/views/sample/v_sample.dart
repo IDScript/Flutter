@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/bloc/sample/sample_bloc.dart';
 
 class Sample extends StatelessWidget {
+  static String routeName = '/sample';
   Sample({Key? key}) : super(key: key);
 
   final CounterBloc bloc = CounterBloc();
@@ -10,7 +11,13 @@ class Sample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sample'),
+        title: const Text(
+          'Sample',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 20,
+          ),
+        ),
       ),
       body: Center(
         child: Column(
