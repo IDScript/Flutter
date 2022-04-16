@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'views/sample/v_sample.dart';
+import './constants/text.dart';
+import './views/sample/v_sample.dart';
+import 'configs/routers.dart';
+import 'configs/themes.dart';
 
 void main() {
   runApp(
@@ -13,12 +16,12 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Bloc Example',
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-      ),
+      debugShowCheckedModeBanner: false, //Disable Debud banner on right top app
+      title: appTitle,
       home: Sample(),
+      theme: theme(), //Theme for this App
+      initialRoute: Sample.routeName, //Redirect to Splash Screen
+      routes: routes, //Setup Routes from routers.dart
     );
   }
 }
