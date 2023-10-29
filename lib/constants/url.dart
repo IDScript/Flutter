@@ -2,9 +2,9 @@ import 'package:http/http.dart' as http;
 
 class BaseUrl {
   static String baseUrl = "http://200.0.0.2/api/v1/";
-  static String acc = baseUrl + "acc";
-  static String user = baseUrl + "user";
-  static String profileImage = baseUrl + "assets/img/profile/";
+  static String acc = "${baseUrl}acc";
+  static String user = "${baseUrl}user";
+  static String profileImage = "${baseUrl}assets/img/profile/";
 }
 
 class API {
