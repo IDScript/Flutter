@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+
+<a href="https://codecov.io/gh/IDScript/Flutter"><img src="https://codecov.io/gh/IDScript/Flutter/branch/main/graph/badge.svg" alt="codecov"></a>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
