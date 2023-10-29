@@ -3,7 +3,7 @@ import 'package:myapp/bloc/sample/sample_bloc.dart';
 
 class Sample extends StatelessWidget {
   static String routeName = '/sample';
-  Sample({Key? key}) : super(key: key);
+  Sample({super.key});
 
   final CounterBloc bloc = CounterBloc();
 
